@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Casa Lannister</h1>
+    <p class="lead text-danger">"Un Lannister siempre paga sus deudas"</p>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <img src="~/css/0c8eb6e05700681fa63de5a6324aa923.jpg" alt="Casa Lannister" class="img-fluid rounded shadow" />
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h3>Productos</h3>
+                </div>
+                <div class="card-body">
+                    <p>Gestiona los productos de la Casa Lannister.</p>
+                    <a asp-controller="Productos" asp-action="Index" class="btn btn-danger">Ver Productos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h3>Categorías</h3>
+                </div>
+                <div class="card-body">
+                    <p>Administra las categorías de productos.</p>
+                    <a asp-controller="Categorias" asp-action="Index" class="btn btn-danger">Ver Categorías</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
